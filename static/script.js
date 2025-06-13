@@ -31,7 +31,7 @@ const generateResponse = async (userMessage) => {
     smoothScrollToBottom(); // Scroll down after appending the thinking message
 
     try {
-        const response = await fetch(https://henrychat-chcsg5bveah4fpcp.eastus-01.azurewebsites.net/api/chat', {
+        const response = await fetch('https://henrychat-chcsg5bveah4fpcp.eastus-01.azurewebsites.net/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
