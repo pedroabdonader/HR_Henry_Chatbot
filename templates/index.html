@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EY HR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="icon" type="image/png" href="../static/assets/favicon.png">
+    <script src="{{ url_for('static', filename='script.js') }}" type="module" defer></script>
+  </head>
+  <body>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded" id="chat_icon">mode_comment</span>
+      <span class="material-symbols-outlined" id="close_icon">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <img src="../static/assets/assistant_icon.png" alt="">
+        <span class="close-btn material-symbols-outlined">close</span>
+        <p>Clear Chat</p>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">support_agent</span>
+          <p>Hi there 👋<br>I'm HR Henry! How can I help you today? If you prefer to talk to me, call me at <a href="tel:+18665703759">+1 866 570 3759</a> </p>
+        </li>
+        <li class="initial_journeys">
+          <div class="card payroll_issue">
+            <div class="title">
+              <span class="light material-symbols-outlined">payments</span>
+              <h4>Investigate Payroll Issues</h4>
+            </div>
+            <p class="description">I noticed a discrepancy in my payroll statement.</p>
+          </div>
+          <div class="card leave_request">
+            <div class="title">
+              <span class="light material-symbols-outlined">calendar_today</span>
+              <h4>Submit Leave Request</h4>
+            </div>
+            <p class="description">I want to submit a request for paid time off.</p>
+          </div>
+          <div class="card hr_inquiry">
+            <div class="title">
+              <span class="light material-symbols-outlined">info</span>
+              <h4>General HR Inquiry</h4>
+            </div>
+            <p class="description">I have questions about HR policies.</p>
+          </div>
+          <div class="card training_resources">
+            <div class="title">
+              <span class="light material-symbols-outlined">school</span>
+              <h4>Access Training Resources</h4>
+            </div>
+            <p class="description">What training resources are available for me?</p>
+          </div>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea class='text_area' placeholder="Something else..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+
+  </body>
+</html>
